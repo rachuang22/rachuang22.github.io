@@ -1,0 +1,8 @@
+    <h2> About Me: </h2>
+    <h4> School: Georgia Institute of Technology</h4>
+    <h4> Major: Computer Engineering</h4>
+    <h4> Some Favorite Languages: Java, Python, C, C++
+
+    <h4> Some more blurbs about me will go here </h4>
+    <h2> Projects: </h2>
+    <h4> UNCW REU 2018: </h4>
