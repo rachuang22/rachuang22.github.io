@@ -3,23 +3,188 @@
 <head>
     <title> Rachel Huang</title>
     <link rel = "stylesheet" href="./css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  .navbar {
+      margin-bottom: 0;
+      background-color: white;
+      color: #536684;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font: "Lato", sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #536684 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: white !important;
+      background-color:#536684 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #536684 !important;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+    }
+    </style>
 </head>
 
 <body>
 
-    <div class="topnav">
-      <a class="active" href="index.html">About Me</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Contact.html">Contact</a>
-      <a href="Art.html">Art</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Rachel Huang</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="#DeepLearning">Deep Learning</a></li>
+        <li><a href="#PersonalProjects">Personal Projects</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+  <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;"> About Me</h3>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4" style="color:white;background-color:#536684;"><h4> Blurb about myself </h4>
+        <p> Welcome to my personal website. I am currently an undergraduate third year student at Georgia Tech.</p>
+        </div>
+        <div class="col-sm-4" style="background-color:#536684;">
+          <img src="https://raw.githubusercontent.com/rachuang22/rachuang22.github.io/master/Rachel.jpg" positioncenter>
+        </div>
+        <div class="col-sm-4" style="color:white;background-color:#536684;">
+          <h4> My Stats </h4>
+          <p>School: Georgia Institute of Technology</p>
+          <p>Major: Computer Engineering</p>
+          <p>Favorite Languages: Python, C, C++, Java</p>
+        </div>
+      </div>
     </div>
 
-    <img src="https://raw.githubusercontent.com/rachuang22/rachuang22.github.io/master/Rachel.jpg">
-    <h1>Rachel Huang</h1>
-    <h2> About Me: </h2>
-    <h4> School: Georgia Institute of Technology</h4>
-    <h4> Major: Computer Engineering</h4>
-    <h4> Some Favorite Languages: Java, Python, C, C++ </h4>
-    <h4> Some more blurbs about me will go here </h4>
+    <p style="color:#536684;" id = "DeepLearning"> Deep Learning Tag </p>
+  </div>
+
+    <div style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h3>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+
+    </div>
+
+    <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 id = "PersonalProjects" style="text-align:center;">Personal Projects</h3>
+      <p>Stay tuned for more.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
+    </div>
+
+    <div class="AboutMe">
+      <div class="caption">
+        <span class="border">The End</span>
+      </div>
+    </div>
+
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 </body>
 </html>
