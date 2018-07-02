@@ -75,7 +75,36 @@
     .logo {
         font-size: 150px;
     }
-    }
+  }
+
+  p.a {
+    outline: 1px solid white;
+    font: 400 14px/1.8 "Lato", sans-serif;
+  }
+  p.b {
+    outline: 1px solid white;
+    font: 400 14px/1.8 "Lato", sans-serif;
+    white-space: pre
+  }
+
+  p.week1{
+    background: #536684;
+    color: white;
+    font: 400 14px/1.8 "Lato", sans-serif;
+  }
+
+  p.week2{
+    background: white;
+    color: #536684;
+    font: 400 14px/1.8 "Lato", sans-serif;
+  }
+
+  table.a {
+    font: 400 14px/1.8 "Lato", sans-serif;
+    border: 1px solid white;
+    word-wrap: break-word;
+    width: 100%;
+  }
     </style>
 </head>
 
@@ -93,55 +122,101 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">About Me</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#DeepLearning">Deep Learning</a></li>
-        <li><a href="#PersonalProjects">Personal Projects</a></li>
+        <li><a href="#Holojackets">Holojackets</a></li>
         </ul>
       </div>
       </div>
     </nav>
 
-  <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
+  <div id="about" style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
     <h3 style="text-align:center;"> About Me</h3>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4" style="color:white;background-color:#536684;"><h4> Blurb about myself </h4>
-        <p> Welcome to my personal website. I am currently an undergraduate third year student at Georgia Tech.</p>
+        <div class="col-sm-4" style="color:white;background-color:#536684;">
+          <h4 style="text-align:center">Introduction</h4>
+          <p class="a">Welcome to my personal website. I am currently an undergraduate third year student at Georgia Tech. I recently spent the summer at Wilmington participating in a National Science Foundation REU doing a deep learning research project. I also enjoy low-level programming such as C and assembly language.
+          </p>
         </div>
         <div class="col-sm-4" style="background-color:#536684;">
-          <img src="https://raw.githubusercontent.com/rachuang22/rachuang22.github.io/master/Rachel.jpg" positioncenter>
+          <img src="https://raw.githubusercontent.com/rachuang22/rachuang22.github.io/master/Rachel.jpg" class = "center">
         </div>
         <div class="col-sm-4" style="color:white;background-color:#536684;">
-          <h4> My Stats </h4>
-          <p>School: Georgia Institute of Technology</p>
-          <p>Major: Computer Engineering</p>
-          <p>Favorite Languages: Python, C, C++, Java</p>
+            <h4 style="text-align:center"> My Stats </h4>
+            <table class="a">
+            <tr>
+              <td>School:</td>
+              <td>Georgia Institute of Technology</td>
+            </tr>
+            <tr>
+              <td>Expected Graduation:</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>Major:</td>
+              <td>Computer Engineering</td>
+            </tr>
+            <tr>
+              <td>Minor:</td>
+              <td>Industrial Design</td>
+            </tr>
+            <tr>
+              <td>Favorite Languages:</td>
+              <td>Python, C, C++, Java</td>
+            </tr>
+          </table>
+
+
+          <h4 style="text-align:center"> Contact Me </h4>
+          <p class="b">
+          <span class="glyphicon glyphicon-envelope"></span><a style="color:white;" href="mailto:rachuang22@gmail.com"> rachuang22@gmail.com</a>
+          <span class="glyphicon glyphicon-file">Resume</span>
+          </p>
         </div>
       </div>
     </div>
 
-    <p style="color:#536684;" id = "DeepLearning"> Deep Learning Tag </p>
   </div>
 
-    <div style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-      <h3 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h3>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-
+  <div class="container-fluid" id = "DeepLearning"  style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h3>
+    <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface. The image below is an example of a real time object detection model running at around 2 FPS (without GPU).</p>
+    <div class="row">
+      <div class="col-sm-4" style="background-color:white;">
+      <img src="LiveStream.png" style="width: 100%; height: 100%" class ="center">
+      Files:
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <h4 style="text-align:center">Timeline</h4>
+        <p class="week1"> Week 1: During the first couple of weeks, we worked with a large dataset (MORPH-II). We learned how to clean the dataset in R, as well as apply some gender, age, and race classification methods. In the mornings we had lecture and then an assignment in the afternoon. We had an introduction to classification methods such as LDA, QDA, KNN, and so on.
+        </p>
+        <p class="week2"> Week 2: The second ewek was structured very similarly to week one with lecture in the morning and assignments in the afternoon. We continued to learn about classification methods such as regression trees, bootstrapping, bagging, random forest, and boosting. During this week I decided to learn Python in preparation for my research in deep learning.
+        </p>
+        <p class="week1"> Week 3: We moved on from data mining to dimension reduction techniques such as LDA, KLDA, PCA, KPCA, and MDS. Most of the assignments were re-running classification and regression techniques from week one and two after dimension reduction techniques were applied.
+        </p>
+        <p class="week2"> Week 4: This week was dedicated to reading research papers and researching the deep learning field in order to decide what my research topic would be. After video conferencing with some PHD post-docs from Dr. Khuo's lab at Carnegie Mellon, I decided to focus my research on a web implementation of object detection.
+        </p>
+        <p class="week1"> Week 5: I spent most of this week trying to implement an already written model of YOLO (You Only Look Once). I was able to successfully implement a real-time object detection (pictured on the left) running at about 2 FPS. My goal for the summer is to implement some efficient techniques in order to reach around 10 FPS.
+        </p>
+        <p class="week2"> Week 6: After successfully setting up a new GPU desktop, we ran into some problems with training our models. The Mean Average Precision of our trained tiny-YOLO-VOC model was around 0.5% while the already trained model was around 50%.
+        </p>
+        <p class="week1"> Week 7:
+        </p>
+        <p class="week2"> Week 8:
+        </p>
+        <p class="week1"> Week 9:
+        </p>
+        <p class="week2"> Week 10:
+        </p>
+      </div>
     </div>
+  </div>
 
     <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
-      <h3 id = "PersonalProjects" style="text-align:center;">Personal Projects</h3>
+      <h3 id = "Holojackets" style="text-align:center;">Holojackets</h3>
       <p>Stay tuned for more.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
-      <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface.</p>
     </div>
 
     <div class="AboutMe">
