@@ -16,7 +16,7 @@
       color: #536684;
       z-index: 9999;
       border: 0;
-      font-size: 12px !important;
+      font-size: 15px !important;
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
       border-radius: 0;
@@ -79,28 +79,34 @@
 
   p.a {
     outline: 1px solid white;
-    font: 400 14px/1.8 "Lato", sans-serif;
+    font: 400 16px/1.8 "Lato", sans-serif;
   }
   p.b {
     outline: 1px solid white;
-    font: 400 14px/1.8 "Lato", sans-serif;
+    font: 400 16px/1.8 "Lato", sans-serif;
     white-space: pre
   }
+
+/*  p.special-thanks {
+    outline: 1px solid #536684;
+    font: 400 14px/1.8 "Lato", sans-serif;
+    white-space: pre
+  }*/
 
   p.week1{
     background: #536684;
     color: white;
-    font: 400 14px/1.8 "Lato", sans-serif;
+    font: 400 16px/1.8 "Lato", sans-serif;
   }
 
   p.week2{
     background: white;
     color: #536684;
-    font: 400 14px/1.8 "Lato", sans-serif;
+    font: 400 16px/1.8 "Lato", sans-serif;
   }
 
   table.a {
-    font: 400 14px/1.8 "Lato", sans-serif;
+    font: 400 16px/1.8 "Lato", sans-serif;
     border: 1px solid white;
     word-wrap: break-word;
     width: 100%;
@@ -125,19 +131,20 @@
         <li><a href="#about">About Me</a></li>
         <li><a href="#DeepLearning">Deep Learning</a></li>
         <li><a href="#Holojackets">Holojackets</a></li>
+        <li><a href="#PersonalProjects">Personal Projects</a></li>
         </ul>
       </div>
       </div>
     </nav>
 
   <div id="about" style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;"> About Me</h3>
+    <h1 style="text-align:center;"> About Me</h1>
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4" style="color:white;background-color:#536684;">
           <h4 style="text-align:center">Introduction</h4>
-          <p class="a">Welcome to my personal website. I am currently an undergraduate third year student at Georgia Tech. I recently spent the summer at Wilmington participating in a National Science Foundation REU doing a deep learning research project. I also enjoy low-level programming such as C and assembly language.
+          <p class="a">Welcome to my personal website! I am currently an undergraduate third year student at Georgia Institute of Technoloy studying Computer Engineering and Industrial Design. I recently spent the summer at Unversity of North Carolina Wilmington participating in a National Science Foundation program doing a deep learning research project. I also enjoy research and programming applications related to graphics and visualization.
           </p>
         </div>
         <div class="col-sm-4" style="background-color:#536684;">
@@ -148,7 +155,7 @@
             <table class="a">
             <tr>
               <td>School:</td>
-              <td>Georgia Institute of Technology</td>
+              <td>Georgia Tech</td>
             </tr>
             <tr>
               <td>Expected Graduation:</td>
@@ -181,12 +188,15 @@
   </div>
 
   <div class="container-fluid" id = "DeepLearning"  style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h3>
+    <h1 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h1>
     <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface. The image below is an example of a real time object detection model running at around 2 FPS (without GPU).</p>
     <div class="row">
       <div class="col-sm-4" style="background-color:white;">
       <img src="LiveStream.png" style="width: 100%; height: 100%" class ="center">
       Files:
+      <p class="special-thanks">
+      I would like to give a special thanks to Dr. Cuixian Chen and Dr. Yishi Wang for guiding and mentoring me through this summer program. For more information, please visit <a style="color:#536684;" href="http://people.uncw.edu/chenc/"> Dr. Chen's website</a>.
+      </p>
       </div>
       <div class="col-sm-8" style="background-color:white;">
         <h4 style="text-align:center">Timeline</h4>
@@ -196,11 +206,11 @@
         </p>
         <p class="week1"> Week 3: We moved on from data mining to dimension reduction techniques such as LDA, KLDA, PCA, KPCA, and MDS. Most of the assignments were re-running classification and regression techniques from week one and two after dimension reduction techniques were applied.
         </p>
-        <p class="week2"> Week 4: This week was dedicated to reading research papers and researching the deep learning field in order to decide what my research topic would be. After video conferencing with some PHD post-docs from Dr. Khuo's lab at Carnegie Mellon, I decided to focus my research on a web implementation of object detection.
+        <p class="week2"> Week 4: This week was dedicated to reading research papers and researching the deep learning field in order to decide what my research topic would be. After video conferencing with some PHD post-docs from Dr. Khoa Luu's lab at Carnegie Mellon, I decided to focus my research on a web implementation of object detection.
         </p>
         <p class="week1"> Week 5: I spent most of this week trying to implement an already written model of YOLO (You Only Look Once). I was able to successfully implement a real-time object detection (pictured on the left) running at about 2 FPS. My goal for the summer is to implement some efficient techniques in order to reach around 10 FPS.
         </p>
-        <p class="week2"> Week 6: After successfully setting up a new GPU desktop, we ran into some problems with training our models. The Mean Average Precision of our trained tiny-YOLO-VOC model was around 0.5% while the already trained model was around 50%.
+        <p class="week2"> Week 6: After successfully setting up a new GPU desktop, we ran into some problems with training our models. The Mean Average Precision of our trained tiny-YOLO-VOC model was around 0.5% while the already trained model was around 50%. With our MAP being so low, we decided to switch from using Python and Tensorflow to C.
         </p>
         <p class="week1"> Week 7:
         </p>
@@ -215,7 +225,12 @@
   </div>
 
     <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
-      <h3 id = "Holojackets" style="text-align:center;">Holojackets</h3>
+      <h1 id = "Holojackets" style="text-align:center;">Holojackets</h1>
+      <p>Stay tuned for more.</p>
+    </div>
+
+    <div style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h1 id = "PersonalProjects" style="text-align:center;">Personal Projects</h1>
       <p>Stay tuned for more.</p>
     </div>
 
