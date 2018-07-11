@@ -2,15 +2,46 @@
 <html>
 <head>
     <title> Rachel Huang</title>
-    <link rel = "stylesheet" href="./css/main.css">
-    <link rel="icon" href="./img/logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Diplomata' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <style>
+
+    .panel {
+      border: 1px solid #d5d5d5;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-heading {
+      color: #536684 !important; /* johnathan rachel WORDS COLOR */
+      background-color: #fff !important; /* johnathan rachel background*/
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      height: 500px
+  }
+  .panel-body {
+      color: white; !important; /* johnathan rachel WORDS COLOR */
+      background-color: #536684; !important; /* johnathan rachel background*/
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
   .navbar {
       margin-bottom: 0;
       background-color: white;
@@ -79,11 +110,15 @@
   }
 
   p.a {
-    outline: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
     font: 400 16px/1.8 "Lato", sans-serif;
   }
   p.b {
-    outline: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    color:#536684;
+    background-color:white;
     font: 400 16px/1.8 "Lato", sans-serif;
     white-space: pre
   }
@@ -115,16 +150,18 @@
   a.resume {
     font: 400 16px/1.8 "Lato", sans-serif;
   }
+
   table.a {
     font: 400 16px/1.8 "Lato", sans-serif;
-    border: 1px solid white;
     word-wrap: break-word;
     width: 100%;
   }
+
     </style>
+  }
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -148,104 +185,135 @@
     </nav>
 
   <div id="about" style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
-    <p style = "color:#536684;"> blank line </p>
-    <p style = "color:#536684;"> blank line </p>
-    <h1 style="text-align:center;"> About Me</h1>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4" style="color:white;background-color:#536684;">
-        <h3 style="text-align:center">Introduction</h3>
-        <p class="a">Welcome to my personal website! I am currently an undergraduate third year student at Georgia Institute of Technoloy studying Computer Engineering and Industrial Design. I recently spent the summer at Unversity of North Carolina Wilmington participating in a National Science Foundation program doing a deep learning research project. I also enjoy research and programming applications related to graphics and visualization.
-        </p>
-      </div>
-      <div class="col-sm-4" style="background-color:#536684;">
-        <img src="./img/Rachel.jpg" class = "center">
-      </div>
-      <div class="col-sm-4" style="color:white;background-color:#536684;">
-          <h3 style="text-align:center"> My Stats </h3>
-          <table class="a">
-          <tr>
-            <td>School:</td>
-            <td>Georgia Tech</td>
-          </tr>
-          <tr>
-            <td>Expected Graduation:</td>
-            <td>2020</td>
-          </tr>
-          <tr>
-            <td>Major:</td>
-            <td>Computer Engineering</td>
-          </tr>
-          <tr>
-            <td>Minor:</td>
-            <td>Industrial Design</td>
-          </tr>
-          <tr>
-            <td>Favorite Languages:</td>
-            <td>Python, C, C++, Java</td>
-          </tr>
-        </table>
-
-
-        <h3 style="text-align:center"> Contact Me </h3>
-        <p class="b">
-        <span class="glyphicon glyphicon-envelope"></span><a style="color:white;" href="mailto:rachuang22@gmail.com">rachuang22@gmail.com</a>
-        <span class="glyphicon glyphicon-file"><a class="resume" style="color:white;" href="./files/Resume.2018.pdf" download>Resume</a>
-        </span>
-        </p>
+<!-- Container (Get to know us) -->
+  <div class="text-center">
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading" style="color:#536684;">
+        <h3 style="text-align:center; color:#536684">Introduction</h3>
+          <p style="background-color:white; color:#536684;"class="a">Welcome to my personal website! I am currently an undergraduate third year student at Georgia Institute of Technoloy studying Computer Engineering and Industrial Design. I enjoy coding and am currently learning about computer vision. I recently spent the summer participating in a National Science Foundation program doing a web implementation of a real-time object detection model called YOLO-LITE. For more information, check out the link below:
+          </p>
+          <a href="https://reu2018dl.github.io/"> YOLO-LITE website</a>
+         </div>
       </div>
     </div>
+    <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading" style="color:#536684;">
+          <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-1/c0.235.1578.1578/23213090_10213414732475707_7990233878450376489_o.jpg?_nc_cat=0&oh=dffcc1accbe115954de3f3b54d01b365&oe=5BDEBDC9" class="img-circle" width="200" height="200"alt="Rachel Huang">
+           <h3 style="color:#536684">Contact Me</h3>
+          <p><h8><strong>Institution: </strong> Georgia Institute of Technology </h8></p>
+          <p><h8><strong>Major: </strong> Computer Engineering</h8></p>
+          <p><h8><strong>Minor: </strong> Industrial Design</h8></p>
+          <p><h8><strong>Favorite Langauges: </strong> C, C++, Java, Python</h8></p>
+          <span class="glyphicon glyphicon-envelope"></span><a href="mailto:rachuang22@gmail.com"> rachuang22@gmail.com</a>
+          <!-- <p><span class="glyphicon glyphicon-file"></span><a class="resume" href="Resume.2018.pdf" download> Resume</a></p> -->
+          <p><a href="https://www.linkedin.com/in/rachuang22/">LinkedIn</a></p>
+          <p><a href="https://github.com/rachuang22">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
   </div>
-  <p style = "color:#536684;"> blank line </p>
-  <p style = "color:#536684;"> blank line </p>
   </div>
 
+
+  <!----------------------------- DEEP LEARNING ------------------------------->
   <div class="container-fluid" id = "DeepLearning"  style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <h1 style="text-align:center;">National Science Foundation: Data Mining and Statistics</h1>
-    <p>This past summer of 2018, I participated in a Research Experience for Undergraduates (REU) at the University of North Carolina Wilmington. Throughout the 10-week program, I focused my research on creating a neural network model that could successfully do object detection in real time and implementing that onto a web interface. The image below is an example of a real time object detection model running at around 2 FPS (without GPU).</p>
     <div class="row">
       <div class="col-sm-4" style="background-color:white;">
-      <img src="./img/LiveStream.png" style="width: 100%; height: 100%" class ="center">
-      <p style="color:white;">
-        Files:
-      </p>
-      <p class = "files">
-        Files:
-        Stay tuned for papers.
-      </p>
+
+      <div class="row slideanim">
+      <div class="panel panel-default text-center">
+        <div class="panel-body"">
+          <h5><strong>ABOUT</strong></h5>
+          <p><strong>Where: </strong> University of North Carolina Wilmington</p>
+          <p><strong>What:</strong> National Science Foundation, Research Experience for Undergraduates</p>
+          <p><strong>Project: </strong> YOLO-LITE: A web implementation of real-time object detecion</p>
+
+          <p><strong>Skills Earned: </strong></p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100" style="width:10%;background-color:#7a8aa5">
+              R
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:70%;background-color:#7a8aa5">
+              Python
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color:#7a8aa5">
+              Machine Learning
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100" style="width:50%;background-color:#7a8aa5">
+              LaTex
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="row slideanim">
+      <div class="panel panel-default text-center">
+        <div class="panel-body"">
+             <img src="./img/LiveStream.png" style="width: 100%; height: 100%" class ="center">
+        </div>
+        </div>
+      </div>
+
+      <div class="row slideanim">
+      <div class="panel panel-default text-center">
+        <div class="panel-body"">
+            Stay tuned for papers
+        </div>
+        </div>
+      </div>
       <p class="special-thanks">
       I would like to give a special thanks to Dr. Cuixian Chen and Dr. Yishi Wang for guiding and mentoring me through this summer program. For more information, please visit <a style="color:black;" href="http://people.uncw.edu/chenc/"> Dr. Chen's website</a>.
       </p>
       </div>
+
+
       <div class="col-sm-8" style="background-color:white;">
-        <h4 style="text-align:center">Timeline</h4>
+
+
+      <div class="row slideanim">
+      <div class="panel panel-default text-center">
+        <div class="panel-body-white">
+        <h3 style="text-align:center">Timeline</h3>
         <p class="week1"> Week 1: During the first couple of weeks, we worked with a large dataset (MORPH-II). We learned how to clean the dataset in R, as well as apply some gender, age, and race classification methods. In the mornings we had lecture and then an assignment in the afternoon. We had an introduction to classification methods such as LDA, QDA, KNN, and so on.
-          <button style="color:#536684;"type="button" class="btn">
-          <a style="color:#536684;" href="./files/Week1_Presentation.pdf"> Week 1 Presentation </a>
-          </button>
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 1 Presentation</a>
         </p>
         <p class="week2"> Week 2: The second week was structured very similarly to week one with lecture in the morning and assignments in the afternoon. We continued to learn about classification methods such as regression trees, bootstrapping, bagging, random forest, and boosting. During this week I decided to learn Python in preparation for my research in deep learning.
-          <button style="color:#536684;"type="button" class="btn">
-          <a style="color:#536684;" href="./files/Week2_Presentation.pdf"> Week 2 Presentation </a>
-          </button>
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 2 Presentation</a>
         </p>
         <p class="week1"> Week 3: We moved on from data mining to dimension reduction techniques such as LDA, KLDA, PCA, KPCA, and MDS. Most of the assignments were re-running classification and regression techniques from week one and two after dimension reduction techniques were applied.
-          <button style="color:#536684;"type="button" class="btn">
-          <a style="color:#536684;" href="./files/Week3_Presentation.pdf"> Week 3 Presentation </a>
-          </button>
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 3 Presentation</a>
         </p>
         <p class="week2"> Week 4: This week was dedicated to reading research papers and researching the deep learning field in order to decide what my research topic would be. After video conferencing with some PHD post-docs from Dr. Khoa Luu's lab at Carnegie Mellon, I decided to focus my research on a web implementation of object detection.
-          <button style="color:#536684;"type="button" class="btn">
-          <a style="color:#536684;" href="./files/Week4_Presentation.pptx"> Week 4 Presentation </a>
-          </button>
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 4 Presentation</a>
         </p>
         <p class="week1"> Week 5: I spent most of this week trying to implement an already written model of YOLO (You Only Look Once). I was able to successfully implement a real-time object detection (pictured on the left) running at about 2 FPS. My goal for the summer is to implement some efficient techniques in order to reach around 10 FPS.
-          <button style="color:#536684;"type="button" class="btn">
-          <a style="color:#536684;" href="./files/Week5_Presentation.pdf"> Week 5 Presentation </a>
-          </button>
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 5 Presentation</a>
         </p>
         <p class="week2"> Week 6: After successfully setting up a new GPU desktop, we ran into some problems with training our models. The Mean Average Precision of our trained tiny-YOLO-VOC model was around 0.5% while the already trained model was around 50%. With our MAP being so low, we decided to switch from using Python and Tensorflow to C.
+          <a href="./files/Week1_Presentation.pdf" class="btn btn-default" role="button">Week 6 Presentation</a>
         </p>
         <p class="week1"> Week 7:
           <!-- <button style="color:#536684;"type="button" class="btn">
@@ -267,18 +335,39 @@
           <a style="color:#536684;" href="Week1_Presentation.pdf"> Week 10 Presentation </a>
           </button> -->
         </p>
+        </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
 
-    <div style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
-      <h1 id = "Holojackets" style="text-align:center;">Holojackets</h1>
-      <p>Stay tuned for more.</p>
+    <div id = "Holojackets" style="color:white;background-color:#536684;text-align:center;padding:50px 80px;text-align: justify;">
+      <h1 style="text-align:center;">Holojackets</h1>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="text-align:center;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
+      <h2 style="color:#536684;">Stay tuned for more.</h2>
     </div>
 
-    <div style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-      <h1 id = "PersonalProjects" style="text-align:center;">Personal Projects</h1>
-      <p>Stay tuned for more.</p>
+    <div id = "PersonalProjects" style="color:#536684;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h1 style="text-align:center;">Personal Projects</h1>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="text-align:center;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
+      <h2 style="color:white;">Stay tuned for more.</h2>
     </div>
 
     <div class="AboutMe">
